@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Horiseon</title>
 </head>
-
+<!--replaved div containers with semantic html elements-->
 <body>
     <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
@@ -26,24 +26,27 @@
     </header>
     <main>
         <section class="hero">
+            <!--Pulled Hero image out of css to add alt text-->
             <img src="./assets/images/digital-marketing-meeting.jpg" alt="Hero Image: four teammates building a website" />
         </section>
         <section class="content">
-            <section id="search-engine-optimization" class="content-item search-engine-optimization">
+            <!--Added ID to fix broken nav functionality-->
+            <!--removed original classes as ID gives full functionality-->
+            <section class="content-item" id="search-engine-optimization" >
                 <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Notepad, computer and coffe cup " />
                 <h2>Search Engine Optimization</h2>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
                 </p>
             </section>
-            <section id="online-reputation-management" class="content-item online-reputation-management">
+            <section class="content-item" id="online-reputation-management" >
                 <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Laptop with graph showing increasing repution"/>
                 <h2>Online Reputation Management</h2>
                 <p>
                     The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
                 </p>
             </section>
-            <section id="social-media-marketing" class="content-item social-media-marketing">
+            <section  class="content-item" id="social-media-marketing">
                 <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Birds eye view of table with social media icons"/>
                 <h2>Social Media Marketing</h2>
                 <p>
@@ -52,21 +55,22 @@
             </section>
         </section>
         <aside class="benefits">
-            <section class="benefit-lead benefit-item">
+            <!--Added Class benefit-item to simplify css and added IDs to maintain identification in future-->
+            <section class="benefit-item" id="benefit-lead">
                 <h3>Lead Generation</h3>
                 <img src="./assets/images/lead-generation.png" alt="Icon: Lead generation"/>
                 <p>
                     Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
                 </p>
             </section>
-            <section class="benefit-brand benefit-item">
+            <section class="benefit-item" id="benefit-brand">
                 <h3>Brand Awareness</h3>
                 <img src="./assets/images/brand-awareness.png" alt="Icon: Brand awareness"/>
                 <p>
                     Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
                 </p>
             </section>
-            <section class="benefit-cost benefit-item" >
+            <section class="benefit-item" id="benefit-cost" >
                 <h3>Cost Management</h3>
                 <img src="./assets/images/cost-management.png" alt="Icon Cost Management" />
                 <p>
