@@ -1,14 +1,17 @@
 * {
+    /*sets page defaults to prevent uneapected behaviour*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
+    /*set Background color of body element*/
     background-color: #d9dcd6;
 }
 
 header {
+    /*Sets padding, font family, background color and text color of the header element*/
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -16,15 +19,14 @@ header {
 }
 
 header h1 {
+    /*sets the display type to inline block and the font size of h1 elements within the header element*/
     display: inline-block;
     font-size: 48px;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
-}
-
-header nav {
+nav {
+    /*configures the properities of the nav container*/
+    /*removed header selectors to simply selector as this class nav is only used once within the page*/
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,16 +34,21 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
+nav ul {
+    /*set list style to none for unordered list of navigation*/
+    /*removed header selectors to simply selector as this class nav is only used once within the page*/
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
+    /*add inline-block and padding styles to navigation list items*/
+    /*removed header selectors to simply selector as this class nav is only used once within the page*/
     display: inline-block;
     margin-left: 25px;
 }
 
 footer {
+    /*Style the Footer element*/
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -49,19 +56,29 @@ footer {
 }
 
 footer h2 {
+    /*set the font size of the footer h2 element*/
     font-size: 20px;
 }
 
 a {
+    /*set the style of hyperlink elements within the site*/
     color: #ffffff;
     text-decoration: none;
 }
 
 p {
+    /*set the font size with the body*/
     font-size: 16px;
 }
 
+.seo {
+    /*change the colour of the span within the */
+    /*removed header h1 selectors to simply selector as this class is only used once within the page*/
+    color: #d9dcd6;
+}
+
 .hero {
+    /*set the height width and border of the hero image container*/
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -71,8 +88,9 @@ p {
     background-position: center;*/
 }
 
-/*added the folowing selector to reapply atributes to the hero image*/
 .hero  img{
+    /*ensure hero image stays within the container*/
+    /*added this selector to reapply atributes to the hero image*/
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -80,23 +98,27 @@ p {
 }
 
 .float-left {
+    /*floats selected images left*/
     float: left;
     margin-right: 25px;
 }
 
 .float-right {
+    /*floats selected images right*/
     float: right;
     margin-left: 25px;
 }
 
 .content {
+    /*container for the left hand images and text*/
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/*Modified selector to condence css - removing 3 identical defintions*/
 .content-item {
+    /*select all content items*/
+    /*Modified selector to condence css - removing 3 identical defintions*/
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -105,19 +127,22 @@ p {
     color: #ffffff;
 }
 
-/*Modified selector to condence css - removing 3 identical defintions*/
 .content img {
+    /*all images within the content class*/
+    /*Modified selector to condence css - removing 3 identical defintions*/
     max-height: 200px;
 }
 
-/*Modified selector to condence css - removing 3 identical defintions*/
 .content h2 {
+    /*h2 elements within the content class*/
+    /*Modified selector to condence css - removing 3 identical defintions*/
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/*Relocated to below content css selectors to ensure a logical grouping of types*/ 
 .benefits {
+    /*base container for benifits (right side components)*/
+    /*Relocated to below content css selectors to ensure a logical grouping of types*/ 
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -128,20 +153,23 @@ p {
     background-color: #2589bd;
 }
 
-/*Added new class to condense*/
 .benefit-item {
+    /*select items with the benefit class*/
+    /*Added new class to condense*/
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/*Modified selector to condence css - removing 3 identical defintions*/
 .benefits h3 {
+    /*selects h3 element with the benifits class*/
+    /*Modified selector to condence css - removing 3 identical defintions*/
     margin-bottom: 10px;
     text-align: center;
 }
 
-/*Modified selector to condence css - removing 3 identical defintions*/
 .benefits img {
+    /*selects img elements with the benifits class*/
+    /*Modified selector to condence css - removing 3 identical defintions*/
     display: block;
     margin: 10px auto;
     max-width: 150px;
