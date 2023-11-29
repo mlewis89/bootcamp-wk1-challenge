@@ -39,7 +39,7 @@ THEN I find a concise, descriptive title
 
 ## Installation
 
-n/a
+The project files are within the /Develop folder of this repo, please explore index.html and /asests/style.css.
 
 ## Usage
 
